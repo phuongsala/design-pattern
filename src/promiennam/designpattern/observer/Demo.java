@@ -1,6 +1,6 @@
 package promiennam.designpattern.observer;
 
-public class Demo{
+public class DEMO{
 	public static void main(String[] args) {
 		String name = "Phuong";
 		System.out.println("Hello, my name is " + name);

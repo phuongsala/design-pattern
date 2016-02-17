@@ -1,6 +1,6 @@
 package promiennam.designpattern.factorymethod;
 
-public class Demo {
+public class DEMO {
 	public static void main(String[] args) {
 		Cake cake = CakeFactory.getCake("Pizza Cake");
 		cake.roduce();

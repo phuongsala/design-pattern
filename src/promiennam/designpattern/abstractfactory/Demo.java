@@ -1,6 +1,6 @@
 package promiennam.designpattern.abstractfactory;
 
-public class Demo {
+public class DEMO {
 	public static void main(String[] args) {
 		
 		CakeAndFruitFactory cakeFactory = Producer.getCakeOrFruit("Cake");

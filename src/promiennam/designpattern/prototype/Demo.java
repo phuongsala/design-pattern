@@ -1,6 +1,6 @@
 package promiennam.designpattern.prototype;
 
-public class Demo {
+public class DEMO {
 	public static void main(String[] args) throws CloneNotSupportedException {
 
 		MyRectangle rect1 = new MyRectangle(10, 20);
