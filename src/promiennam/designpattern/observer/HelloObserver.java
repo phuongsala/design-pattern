@@ -8,8 +8,11 @@ public class HelloObserver {
 		this.mHelloListener = helloListener;
 	}
 
-	public void reply(String s) {
-		mHelloListener.reply(s);
+	public void sayHello(String s) {
+		System.out.println("Hello, my name is " + s);
+		if (mHelloListener != null) {
+			mHelloListener.reply(s);
+		}
 	}
 
 }

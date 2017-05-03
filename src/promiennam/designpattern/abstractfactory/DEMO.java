@@ -5,7 +5,7 @@ public class DEMO {
 		
 		CakeAndFruitFactory cakeFactory = Producer.getCakeOrFruit("Cake");
 		Cake cake = cakeFactory.getCakeFactory("Pizza Cake");
-		cake.roduce();
+		cake.produce();
 		
 		CakeAndFruitFactory fruitFactory = Producer.getCakeOrFruit("Fruit");
 		Fruit fruit = fruitFactory.getFruitFactory("Apple");
