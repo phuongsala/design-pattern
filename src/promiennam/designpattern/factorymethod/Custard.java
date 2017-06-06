@@ -1,9 +1,10 @@
 package promiennam.designpattern.factorymethod;
 
-public class PizzaCake extends Cake{
+public class Custard extends Cake {
+
 	@Override
 	public void produce() {
-		System.out.println("A Pizza Cake is made");
-
+		System.out.println("A Custard is made");
 	}
+
 }
