@@ -6,10 +6,12 @@ public class MyClass {
 
 	private static volatile MyClass instance;
 
+	// make it private to prevent other initializations from outside classes
 	private MyClass() {
 		
 	}
 
+	// sync, double check
 	public static MyClass getInstance() {
 		if (instance == null) {
 			synchronized (MyClass.class) {
