@@ -2,44 +2,35 @@ package promiennam.designpattern.singleton;
 
 public class MyClass {
 
-	/**
-	 * Singleton without pass parameter
-	 */
-	// private static MyClass Inst;
-	//
-	// public static MyClass getInst() {
-	// return Inst == null ? new MyClass() : Inst;
-	// }
-	//
-	/**
-	 * Singleton with pass parameter
-	 */
-	private static String  mArg;
-	private static MyClass mInst;
+	private static String arg;
 
-	public static MyClass getInst() {
-		return mInst == null ? new MyClass(mArg) : mInst;
-	}
+	private static volatile MyClass instance;
 
-	// Set private to prevent modifiers from out class accesses.
-	private MyClass(String arg) {
-		this.setArg(arg);
-	}
-	
-	public MyClass(){
+	private MyClass() {
 		
 	}
-	
-	public void writeClassName(){
+
+	public static MyClass getInstance() {
+		if (instance == null) {
+			synchronized (MyClass.class) {
+				if (instance == null) {
+					instance = new MyClass();
+				}
+			}
+		}
+		return instance;
+	}
+
+	public void writeClassName() {
 		// The way to use Singleton
-		System.out.println("My class is " + MyClass.getInst().getArg());
+		System.out.println("My class is " + MyClass.getInstance().getArg());
 	}
 
 	public String getArg() {
-		return mArg;
+		return arg;
 	}
 
 	public void setArg(String arg) {
-		MyClass.mArg = arg;
+		MyClass.arg = arg;
 	}
 }

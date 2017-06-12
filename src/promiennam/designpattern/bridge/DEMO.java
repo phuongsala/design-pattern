@@ -7,7 +7,7 @@ public class DEMO {
 		Animal dog = new Dog(new Running());
 		dog.move();
 		
-		Animal eagle = new Dog(new Flying());
+		Animal eagle = new Eagle(new Flying());
 		eagle.move();
 		
 		Animal sloth = new Sloth(new Crawling());
