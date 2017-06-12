@@ -22,7 +22,6 @@ public class MyClass {
 	}
 
 	public void writeClassName() {
-		// The way to use Singleton
 		System.out.println("My class is " + MyClass.getInstance().getArg());
 	}
 
