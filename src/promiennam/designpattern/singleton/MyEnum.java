@@ -2,12 +2,12 @@ package promiennam.designpattern.singleton;
 
 public enum MyEnum {
 	
-	INSTANCE;
+	Instance;
 
 	private String arg;
 
-	public void writeClassName() {
-		System.out.println("My class is " + getArg());
+	public void writeEnumName() {
+		System.out.println("My enum is " + getArg());
 	}
 
 	public String getArg() {
