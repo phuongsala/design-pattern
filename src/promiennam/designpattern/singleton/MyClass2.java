@@ -19,7 +19,7 @@ public class MyClass2 {
 	}
 
 	public void writeClassName() {
-		System.out.println("My class is " + MyClass2.getInstance().getArg());
+		System.out.println("My class is " + arg);
 	}
 
 	public String getArg() {

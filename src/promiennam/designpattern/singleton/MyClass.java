@@ -24,7 +24,7 @@ public class MyClass {
 	}
 
 	public void writeClassName() {
-		System.out.println("My class is " + MyClass.getInstance().getArg());
+		System.out.println("My class is " + arg);
 	}
 
 	public String getArg() {

@@ -1,15 +1,19 @@
 package promiennam.designpattern.abstractfactory;
 
+import promiennam.designpattern.abstractfactory.cakefactory.Cake;
+import promiennam.designpattern.abstractfactory.fruitfactory.Fruit;
+
 public class DEMO {
+	
 	public static void main(String[] args) {
 		
-		CakeAndFruitFactory cakeFactory = Producer.getCakeOrFruit("Cake");
-		Cake cake = cakeFactory.getCakeFactory("Pizza Cake");
-		cake.produce();
+		AbstractFactory cakeFactory = Producer.getFactory("Cake");
+		Cake cake = cakeFactory.getCakeFactory("Pizza");
+		cake.make();
 		
-		CakeAndFruitFactory fruitFactory = Producer.getCakeOrFruit("Fruit");
+		AbstractFactory fruitFactory = Producer.getFactory("Fruit");
 		Fruit fruit = fruitFactory.getFruitFactory("Apple");
-		fruit.collect();
+		fruit.wash();
 
 	}
 }

@@ -7,7 +7,7 @@ public enum MyEnum {
 	private String arg;
 
 	public void writeEnumName() {
-		System.out.println("My enum is " + getArg());
+		System.out.println("My enum is " + arg);
 	}
 
 	public String getArg() {
