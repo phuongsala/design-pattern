@@ -6,21 +6,25 @@ import promiennam.designpattern.abstractfactory.fruitfactory.Fruit;
 public class CakeFactory extends AbstractFactory {
 	
 	@Override
-	protected Fruit getFruitFactory(String type) {
+	protected Fruit getFruit(String type) {
 		return null;
 	}
 
 	@Override
-	protected Cake getCakeFactory(String type) {
+	protected Cake getCake(String type) {
+		
 		if (type.equals("Pizza")) {
 			return new Pizza();
 		}
+		
 		if (type.equals("Muffin")) {
 			return new Muffin();
 		}
+		
 		if (type.equals("Custard")) {
 			return new Custard();
 		}
+		
 		return null;
 	}
 }

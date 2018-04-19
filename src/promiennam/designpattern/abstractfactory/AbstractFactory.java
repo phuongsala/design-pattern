@@ -5,8 +5,8 @@ import promiennam.designpattern.abstractfactory.fruitfactory.Fruit;
 
 public abstract class AbstractFactory {
 
-	protected abstract Cake getCakeFactory(String type);
+	protected abstract Cake getCake(String type);
 
-	protected abstract Fruit getFruitFactory(String type);
+	protected abstract Fruit getFruit(String type);
 
 }

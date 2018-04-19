@@ -8,11 +8,11 @@ public class DEMO {
 	public static void main(String[] args) {
 		
 		AbstractFactory cakeFactory = Producer.getFactory("Cake");
-		Cake cake = cakeFactory.getCakeFactory("Pizza");
+		Cake cake = cakeFactory.getCake("Pizza");
 		cake.make();
 		
 		AbstractFactory fruitFactory = Producer.getFactory("Fruit");
-		Fruit fruit = fruitFactory.getFruitFactory("Apple");
+		Fruit fruit = fruitFactory.getFruit("Apple");
 		fruit.wash();
 
 	}
